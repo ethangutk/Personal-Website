@@ -1,2 +1,2 @@
-# Personal-Website
-The source code and my thought process behind my personal website.
+# Since my website is one of my new projects, I am still making this readme file.
+### Check back soon.
