@@ -2,7 +2,7 @@
     Your Name's Personal Website
     Copyright 2022 (C) Your Name
 
-    CSS File
+    Javascript File
     07/24/2022
 */
 
