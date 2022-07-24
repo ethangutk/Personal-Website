@@ -12,17 +12,18 @@
 	</tr>
 	<tr>
 		<td>
-			<a href="#">ℹ About The Project</a><br><br>
-			<a href="#">📃 Site  Features</a>
+			<a href="#ℹ-about-the-project">ℹ About The Project</a><br><br>
+			<a href="#-site--features">📃 Site  Features</a>
 			<ul>
-				<li><a href="#">🔌 AWS Hosting</a></li>
-				<li><a href="#">🔒 HTTPS</a></li>
-				<li><a href="#">🏗 HTML, CSS, Javascript</a></li>
-				<li><a href="#">📐 Bootstrap</a></li>
-				<li><a href="#">🏃‍♂️ Animations</a></li>
-				<li><a href="#">🎨 Theme</a></li>
+				<li><a href="#-aws-hosting">🔌 AWS Hosting</a></li>
+				<li><a href="#-https">🔒 HTTPS</a></li>
+				<li><a href="#-html-css-javascript">🏗 HTML, CSS, Javascript</a></li>
+				<li><a href="#-bootstrap">📐 Bootstrap</a></li>
+				<li><a href="#%EF%B8%8F-animations">🏃‍♂️ Animations</a></li>
+				<li><a href="#-theme">🎨 Theme</a></li>
+				<li><a href="#-theme">🎛 Metadata</a></li>
 			</ul>
-			<a href="#">🏁 The Final Product</a><br><br>
+			<a href="#-the-final-product">🏁 The Final Product</a><br><br>
 		</td>
   	</tr>
 	<tr>
@@ -34,7 +35,7 @@
 </table><br>
 <br><br>
 
-## 🎓 About The Project
+## ℹ About The Project
 
 
 
@@ -64,6 +65,10 @@
 <br><br>
 ### 🎨 Theme
 
+
+<br><br>
+### 🎛 Metadata
+
 <br><br><br><br>
 
 ## 🏁 The Final Product
@@ -87,3 +92,8 @@
 <h6 align="center">
   Copyright © Ethan Gutknecht 2022
 </h6>
+
+
+
+
+
