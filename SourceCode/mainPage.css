@@ -1,0 +1,683 @@
+/*generic element-wide changes*/
+
+html {
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+body {
+    background: linear-gradient(45deg, rgba(253, 94, 83, 0.8) 0%, rgba(252, 156, 84, 0.93) 65%, rgba(255, 227, 115, 0.65) 100%);
+    min-height: 100vh;
+    padding-bottom: 150px;
+    overflow-x: hidden
+}
+
+h1 {
+    text-decoration: none;
+    color: #111111;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.5mm;
+    text-align: center;
+    text-decoration:
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+    font-weight: bold;
+}
+
+
+
+/*Intro Message*/
+
+#introMessage {
+    color: white;
+    position: absolute;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 0.5mm;
+    line-height: 200px;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    text-align: center;
+    margin-left: -100px;
+    margin-top: -100px;
+
+    animation-name: introMessageAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+#introContainer {
+    justify-content: center;
+    align-items: center;
+    opacity: 1.0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#introBG {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    background-color: #FFFFFF;
+    text-align: center;
+    animation-name: introBGAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+.introFG {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    background-color: var(--aBG);
+    text-align: center;
+    opacity: 0.8;
+    animation-name: introFGAnimation;
+    animation-duration: calc(5s - var(--aD));
+    animation-delay: var(--aD);
+    animation-timing-function: cubic-bezier();
+    animation-fill-mode: forwards;
+}
+
+@keyframes introMessageAnimation {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+
+@keyframes introBGAnimation {
+    0% {
+        width: 100%;
+        left: 0%;
+        height: 100%;
+        top: 0%;
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        width: 0%;
+        left: 50%;
+        height: 0%;
+        top: 50%;
+        transform: rotateZ(45deg);
+    }
+}
+
+@keyframes introFGAnimation {
+    0% {
+        width: 100%;
+        left: 0%;
+        height: 100%;
+        top: 0%;
+        transform: rotateZ(45deg);
+    }
+
+    15% {
+        width: 250px;
+        left: 50%;
+        margin-left: -125px;
+        height: 250px;
+        top: 50%;
+        margin-top: -125px;
+        transform: rotateZ(calc(-15deg * var(--aM)));
+    }
+
+    87% {
+        width: 250px;
+        left: 50%;
+        margin-left: -125px;
+        height: 250px;
+        top: 50%;
+        margin-top: -125px;
+        transform: rotateZ(calc(-85deg * var(--aM)));
+    }
+
+    93% {
+        width: 280px;
+        left: 50%;
+        margin-left: -140px;
+        height: 280px;
+        margin-top: -140px;
+        top: 50%;
+    }
+
+    100% {
+        width: 0%;
+        left: 50%;
+        height: 0%;
+        top: 50%;
+        transform: rotateZ(calc(270deg * var(--aM)));
+    }
+}
+
+
+
+/*Main Container CSS*/
+/*BG Animation*/
+
+#BGTileAnimationContainer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    justify-content: space-between;
+    transform: skewY(-5deg) translateY(-7%)
+}
+
+#BGTileAnimationContainer span {
+    position: relative;
+    min-width: 120px;
+    height: 100px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 0.6mm;
+    padding-top: 30px;
+    transform-style: preserve-3d;
+    transform: translateZ(-500px);
+
+    
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+    color: white;
+    animation: BGAnimationKFs 3s linear infinite;
+    animation-duration: calc(400s / var(--random));
+}
+
+.bgTiles span {
+    background: #EEE;
+    filter: blur(40px);
+    opacity: 100%;
+
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier();
+}
+
+.active span {
+    background: #9f60b3;
+    filter: blur(2px);
+    opacity: 90%;
+    
+    transition-duration: 10s;
+    transition-timing-function: cubic-bezier();
+}
+
+@keyframes BGAnimationKFs {
+    0% {
+        transform: translateY(2500px) rotateX(calc(3000deg / var(--random))) rotateZ(calc(5000deg / var(--random) * 2));
+        opacity: opacity: 00%;
+        filter: blur(15px);
+    }
+    35% {
+        opacity: 0%;
+    }
+}
+
+.mainContainer {
+    background-color: #dddddd;
+    transform: skewY(-1.3deg) translateX(30px) translateY(40px);
+}
+
+#mainContainerCubLeft {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 60px;
+    height: 100%;
+    background: #eeeeee;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg)
+}
+
+#mainContainerCubTop {
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 100%;
+    height: 60px;
+    background: #eeeeee;
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+#mainContainerdropShadow {
+    position: absolute;
+    top: 104.5%;
+    left: -60px;
+    opacity: 0.5;
+    background-color: black;
+    width: 107%;
+    height: 80px;
+    filter: blur(20px);
+}
+
+.copyrightMessage {
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    margin-left: -210px;
+    width: 400px;
+    opacity: 0.75
+}
+
+
+
+/*Navigation List CSS*/
+
+#navigationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 7%;
+}
+
+#navigationList {
+    position: relative;
+    width: 480px;
+    transform: skewY(-1.3deg) translateX(30px) translateY(40px);
+}
+
+#navigationList li {
+    position: relative;
+    list-style: none;
+    width: 400px;
+    background: #eeeeee;
+    padding: 30px;
+    transition: 0.5s;
+    z-index: calc(1 * var(--listItem));
+}
+
+#navigationList li:nth-child(even) {
+    background: #dedede;
+}
+
+#navigationList li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.6mm;
+    transition: 0.5s;
+}
+
+#navigationList li:hover a {
+    color: white;
+}
+
+#navigationList li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 60px;
+    height: 100%;
+    background: #eeeeee;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg)
+}
+
+#navigationList li:nth-child(even)::before {
+    filter: brightness(0.6);
+}
+
+#navigationList li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 100%;
+    height: 60px;
+    background: #eeeeee;
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+#navigationList li:hover {
+    transform: translateX(-80px);
+    background: #FD7E75;
+    width: 480px
+}
+
+#navigationList li:hover::before {
+    background: #FD7E75;
+    filter: brightness(0.7)
+}
+
+#navigationList li:hover::after {
+    background: #FD7E75;
+    filter: brightness(0.9)
+}
+
+.skipToContentLink {
+    position: absolute;
+    width 200px;
+    background-color:  #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transform: translate(-165px);
+    
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier();
+}
+
+.skipToContentLink:focus {
+    transform: translate(20px);
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+}
+
+
+
+/*About Me*/
+
+#profilePictureContainer {
+    background-color: black;
+    width: 90%;
+    margin: 5%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.profilePic {
+    width: 100%;
+    margin: 0%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+
+}
+
+.profileCardIcon {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: -25px;
+}
+
+#pBG {
+    width: 200%;
+    aspect-ratio: 2 / 1;
+
+
+    animation-name: pBGAnimation;
+    animation-delay: 5s;
+    animation-duration: 60s;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+
+.profileLinks:hover {
+    color: var(--linkColor)
+}
+
+@keyframes pBGAnimation {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: -100%;
+    }
+}
+
+
+
+/*Education*/
+#educationImageContainer {
+    background: transparent;
+    width: 100%;
+    margin-left: 0%;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+}
+
+#eduTrees {
+    height: 100%;
+    aspect-ratio: 4 / 1;
+
+    animation-name: pBG-Animation;
+    animation-delay: 5s;
+    animation-duration: 45s;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+
+.eduLogo {
+    aspect-ratio: 1/1;
+    width: 80%;
+}
+
+#eduLogoMobile {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    aspect-ratio: 1/1;
+    max-width: 100px;
+    max-height: 100px;
+    top: 100%;
+    margin-top: -115px;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+
+
+/*Experience*/
+.experienceLogoContainer {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    left: 50%;
+    margin-left: -110px;
+    
+}
+
+.experienceLogo {
+    width: 220px;
+    aspect-ratio: 1/1;
+    background-color: #D3D3D3
+}
+
+.experienceLogoLeft {
+    position: absolute;
+    width: 16px;
+    left: -16px;
+    height: 220px;;
+    background: var(--c);
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg)
+}
+
+.experienceLogoTop {
+    position: absolute;
+    left: 16;
+    top: -16px;
+    width: 220px;
+    height: 16px;
+    background: var(--c);
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+
+
+/*Certifications*/
+.certificationBadge {
+    max-width: 100%;
+}
+
+.linkcert:hover {
+    color: #FF9900;
+}
+
+
+
+/*Projects*/
+.projectLinkLeft {
+    position: absolute;
+    left: -16px;
+    width: 16px;
+    height: 100%;
+    background: var(--c);
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg)
+}
+
+.projectLinkTop {
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 16px;
+    background: var(--c);
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+}
+
+.linkContainer {
+    position: relative;
+    width: 400px;
+    height: 140px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.linkContainer:hover {
+    filter:contrast(1.8);
+}
+
+
+/* Get In Touch */
+.gitLogoContainer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    margin-left: -60px;
+    
+}
+.gitLogo {
+    width: 120px;
+    aspect-ratio: 1/1;
+    background-color: #D3D3D3
+}
+
+.gitLogoLeft {
+    position: absolute;
+    width: 16px;
+    left: -16px;
+    height: 120px;;
+    background: var(--c);
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg)
+}
+
+.gitLogoTop {
+    position: absolute;
+    left: 16;
+    top: -16px;
+    width: 120px;
+    height: 16px;
+    background: var(--c);
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.copySuccess {
+    color: green
+}
+
+
+/* Scrolling Animations */
+.eduImageAnimation{
+    position: absolute;
+    height: 100%;
+    transform: translateY(100%);
+    
+    transition-delay: calc((2s - var(--delay)) / 10);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier();
+}
+
+.eduImageAnimation.active {
+    transform: translateY(0%);
+    
+    transition-delay: var(--delay);
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier();
+}
+
+.fadeIn{
+    opacity: 0%;
+    transform: translateY(-30px) translateX(-30px);
+    
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+}
+
+.fadeIn.active {
+    opacity: 100%;
+    transform: translateY(0px) translateX(0px);
+    
+    transition-delay: calc(var(--delay) + 0.3s);
+    transition-duration: 0.9s;
+    transition-timing-function: cubic-bezier();
+}
