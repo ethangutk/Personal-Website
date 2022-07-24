@@ -197,9 +197,11 @@ a {
     0% {
         opacity: 0.0;
     }
+
     50% {
         opacity: 0.0;
     }
+
     100% {
         opacity: 1.0;
     }
@@ -231,7 +233,7 @@ a {
     transform-style: preserve-3d;
     transform: translateZ(-500px);
 
-    
+
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier();
     color: white;
@@ -252,7 +254,7 @@ a {
     background: #9f60b3;
     filter: blur(2px);
     opacity: 90%;
-    
+
     transition-duration: 10s;
     transition-timing-function: cubic-bezier();
 }
@@ -263,6 +265,7 @@ a {
         opacity: opacity: 00%;
         filter: blur(15px);
     }
+
     35% {
         opacity: 0%;
     }
@@ -329,18 +332,24 @@ a {
     left: 50%;
     width: 400px;
     height: 60px;
-    margin-left: -155px;
-    margin-top: -335px;
-    letter-spacing: 1.5mm;
-    transform: skewX(45deg) skewY(-1.3deg);
-    color:darkslategrey;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
+    margin-left: -170px;
+    margin-top: -390px;
+    transform: skewY(-1.3deg);
+    background: #eeeeee;
     opacity: 1.0;
-    
+
     animation: headerAnimation;
     animation-duration: 10s;
+}
+
+#headerText {
+    letter-spacing: 1.5mm;
+    text-align: center;
+    line-height: 60px;
+    color: darkslategrey;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 #navigationContainer {
@@ -436,12 +445,12 @@ a {
 .skipToContentLink {
     position: absolute;
     width 200px;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     padding: 10px;
     margin-top: 20px;
     text-transform: uppercase;
     transform: translate(-165px);
-    
+
     transition-duration: 1s;
     transition-timing-function: cubic-bezier();
 }
@@ -558,7 +567,7 @@ a {
     height: 220px;
     left: 50%;
     margin-left: -110px;
-    
+
 }
 
 .experienceLogo {
@@ -571,7 +580,8 @@ a {
     position: absolute;
     width: 16px;
     left: -16px;
-    height: 220px;;
+    height: 220px;
+    ;
     background: var(--c);
     filter: brightness(0.7);
     transform-origin: right;
@@ -637,7 +647,7 @@ a {
 }
 
 .linkContainer:hover {
-    filter:contrast(1.8);
+    filter: contrast(1.8);
 }
 
 
@@ -648,8 +658,9 @@ a {
     height: 120px;
     left: 50%;
     margin-left: -60px;
-    
+
 }
+
 .gitLogo {
     width: 120px;
     aspect-ratio: 1/1;
@@ -660,7 +671,8 @@ a {
     position: absolute;
     width: 16px;
     left: -16px;
-    height: 120px;;
+    height: 120px;
+    ;
     background: var(--c);
     filter: brightness(0.7);
     transform-origin: right;
@@ -686,11 +698,11 @@ a {
 
 
 /* Scrolling Animations */
-.eduImageAnimation{
+.eduImageAnimation {
     position: absolute;
     height: 100%;
     transform: translateY(100%);
-    
+
     transition-delay: calc((2s - var(--delay)) / 10);
     transition-duration: 1s;
     transition-timing-function: cubic-bezier();
@@ -698,16 +710,16 @@ a {
 
 .eduImageAnimation.active {
     transform: translateY(0%);
-    
+
     transition-delay: var(--delay);
     transition-duration: 0.8s;
     transition-timing-function: cubic-bezier();
 }
 
-.fadeIn{
+.fadeIn {
     opacity: 0%;
     transform: translateY(-30px) translateX(-30px);
-    
+
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier();
 }
@@ -715,7 +727,7 @@ a {
 .fadeIn.active {
     opacity: 100%;
     transform: translateY(0px) translateX(0px);
-    
+
     transition-delay: calc(var(--delay) + 0.3s);
     transition-duration: 0.9s;
     transition-timing-function: cubic-bezier();
