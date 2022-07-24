@@ -1,3 +1,14 @@
+/*
+    Ethan Gutknecht's Personal Website
+    Copyright 2022 (C) Ethan Gutknecht
+
+    Javascript File
+    07/24/2022
+*/
+
+
+
+
 // Variables
 var copyFuncRunning = false;
 history.scrollRestoration = "manual";
