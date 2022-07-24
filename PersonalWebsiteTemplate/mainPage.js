@@ -6,6 +6,9 @@
     07/24/2022
 */
 
+
+
+
 /*Prepare the page for start up*/
 function startUpPage() {
     console.log("Page loaded.")
