@@ -201,7 +201,7 @@ a {
         opacity: 0.0;
     }
 
-    50% {
+    90% {
         opacity: 0.0;
     }
 
@@ -342,7 +342,7 @@ a {
     opacity: 1.0;
 
     animation: headerAnimation;
-    animation-duration: 10s;
+    animation-duration: 5.1s;
 }
 
 #headerText {
@@ -612,7 +612,7 @@ a {
 }
 
 .linkcert:hover {
-    color: #FF9900;
+    color: #FD5E53;
 }
 
 

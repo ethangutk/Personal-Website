@@ -87,14 +87,12 @@ window.addEventListener('scroll', function () {
 
     // Ranges for animations
     var aboutMeShowPercent = 0.085;
-    var eduImageShowPercent = 0.3;
-    var keyfactorImageShowPercent = 0.49;
-    var certImageShowPercent = 0.61;
-    var projectsImageShowPercent = 0.69;
+    var eduImageShowPercent = 0.25;
+    var experienceImageShowPercent = 0.44;
+    var certImageShowPercent = 0.64;
+    var projectsImageShowPercent = 0.725;
     var gitImageShowPercent = 0.91;
     
-    console.log(currScrollPercentage);
-
     var bgTiles = document.querySelector(".bgTiles");
     if (currScrollPercentage > 0.0) {
         bgTiles.classList.add("active");
@@ -126,13 +124,16 @@ window.addEventListener('scroll', function () {
         }
     }
 
-    // Keyfactor Animation
-    var keyfactorImage = document.querySelector(".keyfactorImage");
-    if (currScrollPercentage > keyfactorImageShowPercent) {
-        keyfactorImage.classList.add("active");
-
+    // Experience Logos Animation
+    var experienceLogos = document.querySelectorAll(".experienceLogos");
+    if (currScrollPercentage > experienceImageShowPercent) {
+        for (var i = 0; i < experienceLogos.length; i++) {
+            experienceLogos[i].classList.add("active");
+        }
     } else {
-        keyfactorImage.classList.remove("active");
+        for (var i = 0; i < experienceLogos.length; i++) {
+            experienceLogos[i].classList.remove("active");
+        }
     }
 
     // Cert Animation
