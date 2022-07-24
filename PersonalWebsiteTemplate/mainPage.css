@@ -1,0 +1,29 @@
+/*
+    Your Name's Personal Website
+    Copyright 2022 (C) Your Name
+
+    CSS File
+    07/24/2022
+*/
+
+/*
+A coule of tips I learned along the way:
+    - Research Keyframe Animations
+    - Look at this example of animating things
+      using classes. Makes things really easy.
+      THOUGH I wouldn't focus on that til 90%
+      of your website is finished.
+        See Example:
+      https://alvarotrigo.com/blog/css-animations-scroll/
+
+    - If youre thinking of a feature, bootstrap probably
+      has it implemented already
+    - Use google chromes mobile phone feature in Inspect Element
+*/
+
+body {
+
+    /* You can change this but in my opinion it works better for mobile
+        It does not let the user scroll on the X axis, only the Y axis.  */
+    overflow-x: hidden
+}
