@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <!--
-    Ethan Gutknecht's Portfolio's Home Page
+    Ethan Gutknecht's Personal Website
     Copyright 2021 (C) Ethan Gutknecht
+
+    HTML File
+    07/24/2022
+-->
+
+
+
+<!--
+    Website Color Scheme:
+    https://www.schemecolor.com/sunset-tones.php    
 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <!-- This is what shows up on the Chrome tab, safari tab, etc itself.-->
+    <!-- For example: "Facebook - Home" for Facebook or "/popular" for Reddit -->
+    <title>Ethan Gutknecht</title>
+    
+    <!-- The small icon that shows next to a chrome tab -->
+    <link rel="icon" type="image/x-icon" href="/Images/FavIcon.png">
 
-    <title>Ethan Gutknecht - Portfolio</title>
-
+    <!-- Links to stylesheets, external fonts, external icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="mainPage.css">
-    <link rel="icon" type="image/x-icon" href="/Images/FavIcon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-
+    
+    <!--A universal way to give a brief summary about a webpage-->
     <meta name="description" content="Graduating student and creative developer interested in new opportunities in coding and cloud infrastructure.">
 
-    <meta itemprop="name" content="Ethan Gutknecht - Portfolio">
+    <!-- This one is kind of a weird one. Every html element can have an item prop which describes the content -->
+    <!-- within the html element. I think it helps with SEO but i have no idea -->
+    <!-- other item prop elements include <audio>, <embed>, <iframe>, <img>, <link>, <object>, <source> , <track>, and <video> -->
+    <meta itemprop="name" content="Ethan Gutknecht">
     <meta itemprop="description" content="Graduating student and creative developer interested in new opportunities in coding and cloud infrastructure.">
     <meta itemprop="image" content="http://www.ethangutknecht.com/Images/linkPreview.png">
-
-    <meta property="og:site_name" content="Ethan Gutknecht - Portfolio">
+    
+    <!-- This is what most websites use to show link previews AKA GroupMe, LinkedIn, etc -->
+    <meta property="og:site_name" content="Ethan Gutknecht - Personal Website">
     <meta property="og:type" content="website">
     <meta property="og:url" content="www.ethangutknecht.com">
-    <meta property="og:title" content="Ethan Gutknecht - Portfolio">
+    <meta property="og:title" content="Ethan Gutknecht - Personal Website">
     <meta property="og:description" content="Graduating student and creative developer interested in new opportunities in coding and cloud infrastructure.">
     <meta property="og:image" content="http://www.ethangutknecht.com/Images/linkPreview.png" />
 
+    <!-- The website preview for twitter...twitter thinks they're special -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ethan Gutknecht - Portfolio">
+    <meta name="twitter:title" content="Ethan Gutknecht - Personal Website">
     <meta name="twitter:description" content="Graduating student and creative developer interested in new opportunities in coding and cloud infrastructure.">
     <meta name="twitter:image" content="http://www.ethangutknecht.com/Images/linkPreview.png">
 
+    <!-- If you add a website to your homescreen of your iPhone -->
+    <!-- this will be the app thumbnail. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/appleTouchIcon.png">
+
+    <!-- This is the background color/theme of supported browsers when they visit your site  -->
+    <!-- For example, the background color of the time, battery, signal section of an iPhone -->
     <meta name="theme-color" content="#d8bff0">
 </head>
 
-    
+
 <!-- ------------------------------------------ -->
 <!-- ------------------------------------------ -->
 <!--                                            -->
@@ -52,14 +78,14 @@
 <!--                                            -->
 <!-- ------------------------------------------ -->
 <!-- ------------------------------------------ -->
-   
-    
+
+
 <body>
     <script src="https://kit.fontawesome.com/f1906bfc24.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="mainPage.js"></script>
 
     <!--Background Tile Floating Animation-->
-    <div id="BGTileAnimationContainer" class="bgTiles ">
+    <div id="BGTileAnimationContainer" class="bgTiles">
         <span style="--random:18">PHP</span>
         <span style="--random:22.5">.NET</span>
         <span style="--random:10">Lua</span>
@@ -87,6 +113,7 @@
         Skip to content
     </a>
     <div id="navigationContainer">
+        <h4 id="header">ethan<span style="font-size: 10px"> </span>gutknecht.com</h4>
         <ul id="navigationList">
             <!-- Inspired by: Online tutorials (https://www.youtube.com/watch?v=c2pbcpZJrTs) -->
             <li style="--listItem:6"><a href="#aboutme">About</a></li>
@@ -94,7 +121,7 @@
             <li style="--listItem:4"><a href="#experience">Experience</a></li>
             <li style="--listItem:3"><a href="#certifications">Certifications</a></li>
             <li style="--listItem:2"><a href="#projects">Projects</a></li>
-            <li style="--listItem:1"><a href="#letsconnect">Let's connect</a></li>
+            <li style="--listItem:1"><a href="#connect">Connect</a></li>
         </ul>
     </div>
 
@@ -102,7 +129,7 @@
     <div id="aboutme" class="mainContainer container my-5 p-5">
         <div id="mainContainerCubLeft"></div>
         <div id="mainContainerCubTop"></div>
-        <h1>About Me</h1>
+        <h1>About</h1>
         <br>
         <div class="row">
 
@@ -117,27 +144,27 @@
                 <br>
                 <div class="row">
                     <div class="col-12">
-                        <a href="#letsconnect" class="profileLinks" style="--linkColor:#0072B1">
+                        <a href="#connect" class="profileLinks" style="--linkColor:#0072B1">
                             <h6>LinkedIn</h6>
                             <i class="fa-brands fa-linkedin profileCardIcon"></i>
                         </a>
                     </div>
                     <div class="col-12">
-                        <a href="#letsconnect" class="profileLinks" style="--linkColor:#888888">
-                            <h6>GitHub</h6>
-                            <i class="fa-brands fa-github profileCardIcon"></i>
+                        <a href="#connect" class="profileLinks" style="--linkColor:#d269ff">
+                            <h6>Email</h6>
+                            <i class="fa-solid fa-envelope profileCardIcon"></i>
                         </a>
                     </div>
                     <div class="col-12">
-                        <a href="#letsconnect" class="profileLinks" style="--linkColor:#e95950">
+                        <a href="#connect" class="profileLinks" style="--linkColor:#e95950">
                             <h6>Instagram</h6>
                             <i class="fa-brands fa-instagram profileCardIcon"></i>
                         </a>
                     </div>
                     <div class="col-12">
-                        <a href="#letsconnect" class="profileLinks" style="--linkColor:#d269ff">
-                            <h6>Email</h6>
-                            <i class="fa-solid fa-envelope profileCardIcon"></i>
+                        <a href="#connect" class="profileLinks" style="--linkColor:#888888">
+                            <h6>GitHub</h6>
+                            <i class="fa-brands fa-github profileCardIcon"></i>
                         </a>
                     </div>
                 </div>
@@ -149,7 +176,7 @@
                 <p>
                     Born in the early 2000s, I grew up in Cleveland, Ohio. I had a traditional American upbringing until middle school, when my dad got a new job opportunity, and my family moved our stuff overseas to Manly, Australia. The small suburb outside of Syndey allowed me to expand my horizons and realize what life could offer. Over the three years, I was fortunate to visit over 20 countries over four continents. Eventually, in 2016, I moved back to my hometown, where I finished high school and enrolled in University where I currently reside.<br><br>
 
-                    During that time, especially the last eight years, computers and explicitly telling the computer what to do piqued my interest. So I started to learn low-level coding languages like Lua and run my scripts on Roblox’s game engine. Later on, as my skills increased, I made two very successful games, Outrageous Chase and <a href="https://github.com/ethangutknecht/Outrageous-Blades" target="_blank" style="font-weight: 600">Outrageous Blades</a>, with 376,000 hits and 177,000 unique users, and got featured on the website's home page by the time I was 15 years old. Since then, I have been taking on many different <a href="#projects" style="font-weight: 600">personal and academic projects</a> and developing my skills throughout the process.<br>
+                    During that time, especially the last eight years, computers and explicitly telling the computer what to do piqued my interest. So I started to learn low-level coding languages like Lua and run my scripts on Roblox’s game engine. Later on, as my skills increased, I made two very successful games, Outrageous Chase and <a href="https://github.com/ethangutknecht/Outrageous-Blades" target="_blank" style="--linkColor:#FD5E53; font-weight: 600" class="profileLinks">Outrageous Blades</a>, with 376,000 hits and 177,000 unique users, and got featured on the website's home page by the time I was 15 years old. Since then, I have been taking on many different <a href="#projects" style="--linkColor:#FD5E53; font-weight: 600" class="profileLinks">personal and academic projects</a> and developing my skills throughout the process.<br>
 
                 </p>
             </div>
@@ -170,7 +197,7 @@
             <img src="Images/EducationBackBuilding.png" style="--delay:1.2s" class="eduImageAnimation" alt="BGBuiding" />
             <img src="Images/EducationFrontBuilding.png" style="--delay:0s" class="eduImageAnimation" alt="FGBuilding" />
             <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank">
-                <img id="eduLogoMobile" class="d-lg-none" src="Images/MiamiUniversityLogo.png" alt="Miami University Logo" />       
+                <img id="eduLogoMobile" class="d-lg-none" src="Images/MiamiUniversityLogo.png" alt="Miami University Logo" />
             </a>
         </div>
         <br>
@@ -191,9 +218,9 @@
             <div class="col-lg-8">
                 <!--Miami U description-->
                 <h3>Bachelor of Science in Computer Science</h3>
-                <h5 style="color: gray">August 2019 – December 2022 (expected)</h5>
-                <p>
-                    Miami University is a public research university in Oxford, Ohio. The university was founded in 1809, making it the second-oldest university in Ohio and the 10th oldest public university in the United States. I studied at the College of Engineering and Computing on the university’s main campus in Oxford.<br><br>
+                <h5 style="color: gray; padding-left: 25px">August 2019 – December 2022 (expected)</h5>
+                <p style=" padding-left: 25px">
+                    Miami University is a public research university in Oxford, Ohio. The university was founded in 1809, making it the second-oldest university in Ohio and the 10th oldest public university in the United States. I'm currently studying at <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank" style="--linkColor:#FD5E53; font-weight: 600" class="profileLinks"> the College of Engineering and Computing</a> on the university’s main campus. <a href="https://github.com/ethangutknecht#-education" target="_blank" style="--linkColor:#FD5E53;font-weight: 600; color: gray; font-size: 16px" class="profileLinks">(View courses i've taken)</a>
                 </p>
             </div>
         </div>
@@ -226,12 +253,12 @@
 
                 <h5 style="color: gray">May 2022 - August 2022</h5>
                 <h5 style="color: gray">Independence, Ohio, United States</h5>
-                <p style="margin-left: 8%"> This was my first internship. I started after my Junior year of college and joined a team of six to develop and maintain new features. I spent most of my time fixing bugs and creating smaller Certificate Enrollment and Workflow features.
+                <p style="margin-left: 25px"> This was my first internship. I started after my Junior year of college and joined a team of six to develop and maintain new features. I spent most of my time fixing bugs and creating smaller Certificate Enrollment and Workflow features.
                 </p>
             </div>
         </div>
         <br><br>
-        <h6 class="text-center" style="color: gray">I'm always open to new oppertunities! Feel free to shoot me a message.</h6>
+        <h6 class="text-center" style="color: gray">I'm always open to new oppertunities! <a href="#connect" style="color: dimgray">Feel free to shoot me a message</a>.</h6>
     </div>
 
     <br>
@@ -246,10 +273,10 @@
             <div class="col-lg-9">
                 <!--Solution Arch Description-->
                 <h3>Certified Solutions Architect – Associate</h3>
-                <h5 style="color: gray">Amazon Web Services</h5>
-                <h5 style="color: gray">Issued July 2022 · Expires July 2025</h5>
-                <h5 style="color: gray">Certificate ID: 6E823X8DHNVQ1NWE</h5><br><br>
-                <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" class="linkcert">More Info</a><span> · </span>
+                <h5 style="color: gray; padding-left: 25px"><i class="fa-brands fa-aws" style="padding-right: 10px;"></i> Amazon Web Services</h5>
+                <h5 style="color: gray; padding-left: 25px">Issued July 2022 · Expires July 2025</h5>
+                <h5 style="color: gray; padding-left: 25px">Certificate ID: 6E823X8DHNVQ1NWE</h5><br><br>
+                <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" class="linkcert" style="padding-left: 25px">More Info</a><span> · </span>
                 <a href="https://www.credly.com/badges/23f01fb3-96a5-4f47-9c46-4b926e07377d/public_url" target="_blank" class="linkcert">View Badge</a><span> · </span>
                 <a href="https://aws.amazon.com/verification" target="_blank" class="linkcert">Verify</a><br><br>
             </div>
@@ -379,14 +406,14 @@
 
     <!--Let's Connect-->
     <br>
-    <div id="letsconnect" class="mainContainer container my-5 p-5">
+    <div id="connect" class="mainContainer container my-5 p-5">
         <div id="mainContainerCubLeft"></div>
         <div id="mainContainerCubTop"></div>
-        <h1>Let's Connect</h1>
+        <h1>Connect</h1>
         <div class="container">
             <div class="row">
                 <!--LinkedIn Row-->
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <br>
                     <a href="https://www.linkedin.com/in/ethangutknecht/" target="_blank">
                         <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0s">
@@ -396,7 +423,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-9 align-self-center">
                     <br>
                     <h2>LinkedIn <i style="color:darkgray"> (preferred)</i></h2>
                     <a href="https://www.linkedin.com/in/ethangutknecht/" target="_blank" class="profileLinks" style="--linkColor:#0072B1">
@@ -406,60 +433,18 @@
             </div>
             <br>
             <div class="row">
-                <!--GitHub Row-->
-                <div class="col-sm-2">
-                    <br>
-                    <a href="https://github.com/ethangutknecht" target="_blank">
-                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.2s">
-                            <div style="--c:#D3D3D3" class="gitLogoLeft"></div>
-                            <div style="--c:#D3D3D3" class="gitLogoTop"></div>
-                            <img class="gitLogo" src="Images/githubLogo.png" alt="LinkedIn Logo" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-10">
-                    <br>
-                    <h2>GitHub</h2>
-                    <a href="https://github.com/ethangutknecht" target="_blank" class="profileLinks" style="--linkColor:#e95950">
-                        <h5><i class="fa-brands fa-github"></i> GitHub.com/Ethan.Gutknecht </h5>
-                    </a>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <!--Instagram Row-->
-                <div class="col-sm-2">
-                    <br>
-                    <a href="https://www.instagram.com/ethan.gutknecht/" target="_blank">
-                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.4s">
-                            <div style="--c:#D3D3D3" class="gitLogoLeft"></div>
-                            <div style="--c:#D3D3D3" class="gitLogoTop"></div>
-                            <img class="gitLogo" src="Images/instagramLogo.png" alt="LinkedIn Logo" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-10">
-                    <br>
-                    <h2>Instagram</h2>
-                    <a href="https://www.instagram.com/ethan.gutknecht/" target="_blank" class="profileLinks" style="--linkColor:#e95950">
-                        <h5><i class="fa-brands fa-instagram"></i> Instagram.com/Ethan.Gutknecht </h5>
-                    </a>
-                </div>
-            </div>
-            <br>
-            <div class="row">
                 <!--Email Row-->
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <br>
                     <a href="mailto: gutknechtethan@gmail.com" target="_blank">
-                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.6s">
+                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.2s">
                             <div style="--c:#D3D3D3" class="gitLogoLeft"></div>
                             <div style="--c:#D3D3D3" class="gitLogoTop"></div>
                             <img class="gitLogo" src="Images/gmailLogo.png" alt="LinkedIn Logo" />
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-10">
+                <div class="col-sm-9 align-self-center">
                     <br>
                     <h2>Email</h2>
                     <a href="mailto: gutknechtethan@gmail.com" target="_blank" class="profileLinks" style="--linkColor:#d269ff">
@@ -470,11 +455,55 @@
                 </div>
             </div>
             <br>
+            <div class="row">
+                <!--Instagram Row-->
+                <div class="col-sm-3">
+                    <br>
+                    <a href="https://www.instagram.com/ethan.gutknecht/" target="_blank">
+                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.4s">
+                            <div style="--c:#D3D3D3" class="gitLogoLeft"></div>
+                            <div style="--c:#D3D3D3" class="gitLogoTop"></div>
+                            <img class="gitLogo" src="Images/instagramLogo.png" alt="LinkedIn Logo" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9 align-self-center">
+                    <br>
+                    <h2>Instagram</h2>
+                    <a href="https://www.instagram.com/ethan.gutknecht/" target="_blank" class="profileLinks" style="--linkColor:#e95950">
+                        <h5><i class="fa-brands fa-instagram"></i> Instagram.com/Ethan.Gutknecht </h5>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!--GitHub Row-->
+                <div class="col-sm-3">
+                    <br>
+                    <a href="https://github.com/ethangutknecht" target="_blank">
+                        <div class="gitLogoContainer gitAnimations fadeIn" style="--delay:0.6s">
+                            <div style="--c:#D3D3D3" class="gitLogoLeft"></div>
+                            <div style="--c:#D3D3D3" class="gitLogoTop"></div>
+                            <img class="gitLogo" src="Images/githubLogo.png" alt="LinkedIn Logo" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9 align-self-center">
+                    <br>
+                    <h2>GitHub</h2>
+                    <a href="https://github.com/ethangutknecht" target="_blank" class="profileLinks" style="--linkColor:#e95950">
+                        <h5><i class="fa-brands fa-github"></i> GitHub.com/Ethan.Gutknecht </h5>
+                    </a>
+                </div>
+            </div>
         </div>
         <br>
         <!--Give the box a drop shadow-->
         <div id="mainContainerdropShadow"></div>
-        <h6 class="copyrightMessage" style="text-align: center;color: white; letter-spacing: 1.0mm">Copyright © Ethan Gutknecht 2022</h6>
+        <h6 class="copyrightMessage" style="text-align: center;color: white; letter-spacing: 1.0mm">Copyright © Ethan Gutknecht 2022<br>View Source Code Using
+            <a href="https://vscode.dev/github/ethangutknecht/Personal-Website" target="_blank" style="--linkColor:#eee" class="profileLinks"> VSCode</a> or
+            <a href="https://github.com/ethangutknecht/Personal-Website" target="_blank" style="--linkColor:#eee" class="profileLinks">GitHub</a>.
+        </h6>
     </div>
 
     <!--Everything used for the intro is in here-->
@@ -488,13 +517,7 @@
         <p id="introMessage">Hello</p>
     </div>
     <br>
-</body>
-
-<!-- -------------------------------- -->
-<!-- -------------------------------- -->
-<!--Copyright (C) Ethan Gutknecht 2022-->
-<!-- -------------------------------- -->
-<!-- -------------------------------- --></html>
+</body></html>
 
 
 

@@ -1,3 +1,11 @@
+/*
+    Ethan Gutknecht's Personal Website
+    Copyright 2021 (C) Ethan Gutknecht
+
+    CSS File
+    07/24/2022
+*/
+
 /*generic element-wide changes*/
 
 html {
@@ -185,7 +193,17 @@ a {
     }
 }
 
-
+@keyframes headerAnimation {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
 
 /*Main Container CSS*/
 /*BG Animation*/
@@ -293,16 +311,37 @@ a {
 
 .copyrightMessage {
     position: absolute;
-    top: 108%;
+    top: 107%;
     left: 50%;
-    margin-left: -210px;
-    width: 400px;
+    margin-left: -260px;
+    width: 500px;
     opacity: 0.75
 }
 
 
 
 /*Navigation List CSS*/
+
+#header {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 60px;
+    margin-left: -155px;
+    margin-top: -335px;
+    letter-spacing: 1.5mm;
+    transform: skewX(45deg) skewY(-1.3deg);
+    color:darkslategrey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1.0;
+    
+    animation: headerAnimation;
+    animation-duration: 10s;
+}
 
 #navigationContainer {
     display: flex;
