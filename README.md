@@ -1,6 +1,6 @@
 <h6 >
 	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
-</h6>
+</h6> 
 <h1 align="center">🤵 Personal Website</h1><br>
 <table align="center">
 	<tr>
