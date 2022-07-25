@@ -64,11 +64,11 @@ Ah yes, the famous trio. These three languages are the foundation of my website.
 
 <br><br>
 ### 📐 Bootstrap
-Though I did not heavily rely on bootstrap because I wanted to make it as custom as possible, I did use it at points where it helped me with the more minor issues so I could focus on more significant ideas. For example, I didn’t want to spend time writing my CSS to create a dynamically structured website for mobile and desktop users. Thus I used Bootsrap’s container, row, and column classes to do the job for me. So, in summary, I made minor amendments to my code using bootstrap, but I coded in CSS for all of the more custom stuff I created. [https://getbootstrap.com/](View more info here.)
+Though I did not heavily rely on bootstrap because I wanted to make it as custom as possible, I did use it at points where it helped me with the more minor issues so I could focus on more significant ideas. For example, I didn’t want to spend time writing my CSS to create a dynamically structured website for mobile and desktop users. Thus I used Bootsrap’s container, row, and column classes to do the job for me. So, in summary, I made minor amendments to my code using bootstrap, but I coded in CSS for all of the more custom stuff I created. [View more info here!](https://getbootstrap.com/)
 
 <br><br>
 ### 🏃‍♂️ Animations
-Animations are a relatively newer topic for me. I learned animations six months before the start of this project, and they're so fascinating to me. They are the sole reasons why I enjoy developing on the front end for web pages. Mainly, I used CSS keyframes to create the Intro Animation and some other minor ones you see throughout the website. Animations that appear as you scroll are combined using Javascript to track the scroll bar progress and adding and removing CSS classes to HTML elements. I have two broad CSS classes that fade in a component when activated and hide a component t when unfocused. Very consistent stuff for most parts on my website but for the Education image, I used a custom class under a similar format. For example:
+Animations are a relatively newer topic for me. I learned animations six months before the start of this project, and they're so fascinating to me. They are the sole reasons why I enjoy developing on the front end for websites. Mainly, I used CSS keyframes to create the Intro Animation and some other minor ones you see throughout the website. Animations that appear as you scroll are combined using Javascript to track the scroll bar progress and adding and removing CSS classes to HTML elements. I have two broad CSS classes that fade in a component when activated and hide a component t when unfocused. Very consistent stuff for most parts on my website but for the Education image, I used a custom class under a similar format. For example:
 
 ```css
 /*Transparent*/
@@ -109,7 +109,7 @@ This is the most critical part of this website. Metadata allows for polished sha
 
 <br>
 <h3 align="center">
-View the full website here: <a href=”www.ethangutknecht.com”>www.ethangutknecht.com </a>
+View the full website here: <a href="https://www.ethangutknecht.com/"> www.ethangutknecht.com </a>
 </h3>
 <br>
 
@@ -136,6 +136,8 @@ View the full website here: <a href=”www.ethangutknecht.com”>www.ethangutkne
 <h6 align="center">
   Copyright © Ethan Gutknecht 2022
 </h6>
+
+
 
 
 
