@@ -97,7 +97,7 @@ I created the overall structure pretty blindly. Once the website started to take
 
 <br><br>
 ### 🎛 Metadata
-This is the most critical part of this website. Metadata allows for polished sharing. I discovered how to make a website's metadata more efficient for sharing. I added fields for Twitter, iMessage sharing, generic link sharing, apple home screen icons, fav icons, and descriptions. You can find all metadata in the <head> section of the HTML document.
+This is the most critical part of this website. Metadata allows for polished sharing. I discovered how to make a website's metadata more efficient for sharing. I added fields for Twitter, iMessage sharing, generic link sharing, apple home screen icons, fav icons, and descriptions. It might have overdone it a bit, but this allowed me to show off my website while not being on it. It gives more opportunities to catch people's attention. You can find all metadata in the <head> section of the HTML document.
 
 <p align="center">
   <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/MetaDataPreview.png?raw=true">
