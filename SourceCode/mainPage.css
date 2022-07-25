@@ -336,9 +336,9 @@ a {
     width: 400px;
     height: 60px;
     margin-left: -170px;
-    margin-top: -390px;
+    margin-top: -310px;
     transform: skewY(-1.3deg);
-    background: #eeeeee;
+    background: #555;
     opacity: 1.0;
 
     animation: headerAnimation;
@@ -349,7 +349,7 @@ a {
     letter-spacing: 1.5mm;
     text-align: center;
     line-height: 60px;
-    color: darkslategrey;
+    color: #eeeeee;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 18px;
@@ -374,7 +374,7 @@ a {
     list-style: none;
     width: 400px;
     background: #eeeeee;
-    padding: 30px;
+    padding: 18px;
     transition: 0.5s;
     z-index: calc(1 * var(--listItem));
 }
