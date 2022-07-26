@@ -86,13 +86,14 @@ window.addEventListener('scroll', function () {
     var currScrollPercentage = (window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
 
     // Ranges for animations
-    var aboutMeShowPercent = 0.085;
-    var eduImageShowPercent = 0.25;
-    var experienceImageShowPercent = 0.44;
-    var certImageShowPercent = 0.64;
-    var projectsImageShowPercent = 0.725;
-    var gitImageShowPercent = 0.91;
+    var aboutMeShowPercent = 0.07;
+    var eduImageShowPercent = 0.22;
+    var experienceImageShowPercent = 0.4;
+    var certImageShowPercent = 0.6;
+    var projectsImageShowPercent = 0.68;
+    var gitImageShowPercent = 0.9;
     
+
     var bgTiles = document.querySelector(".bgTiles");
     if (currScrollPercentage > 0.0) {
         bgTiles.classList.add("active");

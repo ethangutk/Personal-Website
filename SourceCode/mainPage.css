@@ -305,6 +305,19 @@ a:hover {
     transform: skewX(45deg);
 }
 
+.popOutContainer {
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    left: 50%;
+    margin-left: calc((var(--w) / 2) * -1);
+}
+
+.popOutContainer img {
+    width: var(--w);
+        background-color: #D3D3D3;
+}
+
 #mainContainerdropShadow {
     position: absolute;
     top: 104.5%;
@@ -337,7 +350,7 @@ a:hover {
     width: 400px;
     height: 60px;
     margin-left: -170px;
-    margin-top: -310px;
+    margin-top: -260px;
     transform: skewY(-1.3deg);
     background: #555;
     opacity: 1.0;
@@ -366,6 +379,7 @@ a:hover {
 
 #navigationList {
     position: relative;
+    top: 40px;
     width: 480px;
     transform: skewY(-1.3deg) translateX(30px) translateY(40px);
 }
@@ -554,59 +568,9 @@ a:hover {
 }
 
 
-
 /*Experience*/
-.experienceLogoContainer {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    left: 50%;
-    margin-left: -110px;
-
-}
-
-.experienceLogo {
-    width: 220px;
-    aspect-ratio: 1/1;
-    background-color: #D3D3D3
-}
-
-
-/*Certifications*/
-.certificationBadge {
-    max-width: 100%;
-}
-
-.linkcert:hover {
-    color: #FD5E53;
-}
-
-
-
-/*Projects*/
-.linkContainer {
-    position: relative;
-    width: 400px;
-    height: 140px;
-    left: 50%;
-    margin-left: -200px;
-}
 
 /* Get In Touch */
-.gitLogoContainer {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    left: 50%;
-    margin-left: -60px;
-
-}
-
-.gitLogo {
-    width: 120px;
-    aspect-ratio: 1/1;
-    background-color: #D3D3D3
-}
 
 .copySuccess {
     color: green
