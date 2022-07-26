@@ -41,10 +41,12 @@ p {
 a {
     text-decoration: none;
     color: #292929;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-
+a:hover {
+    color: var(--linkColor)
+}
 
 /*Intro Message*/
 
@@ -279,29 +281,28 @@ a {
     transform: skewY(-1.3deg) translateX(30px) translateY(40px);
 }
 
-#mainContainerCubLeft {
+.cubeLeft {
     position: absolute;
     top: 0;
-    left: -60px;
-    width: 60px;
+    left: calc(-1 * var(--thickness));
+    width: var(--thickness);
     height: 100%;
-    background: #eeeeee;
+    background: var(--bgColor);
     filter: brightness(0.7);
     transform-origin: right;
     transform: skewY(45deg)
 }
 
-#mainContainerCubTop {
+.cubeTop {
     position: absolute;
     left: 0;
-    top: -60px;
+    top: calc(var(--thickness) * -1);
     width: 100%;
-    height: 60px;
-    background: #eeeeee;
+    height: var(--thickness);
+    background: var(--bgColor);
     filter: brightness(0.9);
     transform-origin: bottom;
     transform: skewX(45deg);
-    transition: 0.5s;
 }
 
 #mainContainerdropShadow {
@@ -505,10 +506,6 @@ a {
     animation-direction: alternate
 }
 
-.profileLinks:hover {
-    color: var(--linkColor)
-}
-
 @keyframes pBGAnimation {
     from {
         margin-left: 0%;
@@ -544,11 +541,6 @@ a {
     animation-direction: alternate
 }
 
-.eduLogo {
-    aspect-ratio: 1/1;
-    width: 80%;
-}
-
 #eduLogoMobile {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
@@ -579,32 +571,6 @@ a {
     background-color: #D3D3D3
 }
 
-.experienceLogoLeft {
-    position: absolute;
-    width: 16px;
-    left: -16px;
-    height: 220px;
-    ;
-    background: var(--c);
-    filter: brightness(0.7);
-    transform-origin: right;
-    transform: skewY(45deg)
-}
-
-.experienceLogoTop {
-    position: absolute;
-    left: 16;
-    top: -16px;
-    width: 220px;
-    height: 16px;
-    background: var(--c);
-    filter: brightness(0.9);
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: 0.5s;
-}
-
-
 
 /*Certifications*/
 .certificationBadge {
@@ -618,29 +584,6 @@ a {
 
 
 /*Projects*/
-.projectLinkLeft {
-    position: absolute;
-    left: -16px;
-    width: 16px;
-    height: 100%;
-    background: var(--c);
-    filter: brightness(0.7);
-    transform-origin: right;
-    transform: skewY(45deg)
-}
-
-.projectLinkTop {
-    position: absolute;
-    left: 0;
-    top: -16px;
-    width: 100%;
-    height: 16px;
-    background: var(--c);
-    filter: brightness(0.9);
-    transform-origin: bottom;
-    transform: skewX(45deg);
-}
-
 .linkContainer {
     position: relative;
     width: 400px;
@@ -648,11 +591,6 @@ a {
     left: 50%;
     margin-left: -200px;
 }
-
-.linkContainer:hover {
-    filter: contrast(1.8);
-}
-
 
 /* Get In Touch */
 .gitLogoContainer {
@@ -668,31 +606,6 @@ a {
     width: 120px;
     aspect-ratio: 1/1;
     background-color: #D3D3D3
-}
-
-.gitLogoLeft {
-    position: absolute;
-    width: 16px;
-    left: -16px;
-    height: 120px;
-    ;
-    background: var(--c);
-    filter: brightness(0.7);
-    transform-origin: right;
-    transform: skewY(45deg)
-}
-
-.gitLogoTop {
-    position: absolute;
-    left: 16;
-    top: -16px;
-    width: 120px;
-    height: 16px;
-    background: var(--c);
-    filter: brightness(0.9);
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: 0.5s;
 }
 
 .copySuccess {
@@ -734,4 +647,31 @@ a {
     transition-delay: calc(var(--delay) + 0.3s);
     transition-duration: 0.9s;
     transition-timing-function: cubic-bezier();
+}
+
+/*Hover Animation*/
+.boxHover:hover {
+    transition-duration: 0.4s;
+    transform: translateX(16px) translateY(16px);
+}
+
+.boxHover:hover .cubeLeft {
+    left: -35px;
+    width: 35px;
+    transition-duration: .4s;
+}
+
+.boxHover:hover .cubeTop {
+    top: -35px;
+    height: 35px;
+    transition-duration: .4s;
+}
+
+/*Media statements must be placed last*/
+/*Hide blocks on mobile*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #BGTileAnimationContainer span {
+        display: none !important;
+    }
 }
