@@ -92,7 +92,7 @@ window.addEventListener('scroll', function () {
     var certImageShowPercent = 0.6;
     var projectsImageShowPercent = 0.68;
     var gitImageShowPercent = 0.9;
-    
+
 
     var bgTiles = document.querySelector(".bgTiles");
     if (currScrollPercentage > 0.0) {
@@ -101,7 +101,7 @@ window.addEventListener('scroll', function () {
     } else {
         bgTiles.classList.remove("active");
     }
-    
+
     var profilePictureFadeIn = document.querySelector(".profilePictureFadeIn");
     if (currScrollPercentage > aboutMeShowPercent) {
         profilePictureFadeIn.classList.add("active");
@@ -109,7 +109,7 @@ window.addEventListener('scroll', function () {
     } else {
         profilePictureFadeIn.classList.remove("active");
     }
-    
+
     // EduImage Animation
     var eduImageAnimation = document.querySelectorAll(".eduImageAnimation");
     var muLogo = document.querySelector(".muLogo");
@@ -157,7 +157,7 @@ window.addEventListener('scroll', function () {
             projects[i].classList.remove("active");
         }
     }
-    
+
     // Get In Contact
     var gitImages = document.querySelectorAll(".gitAnimations");
     if (currScrollPercentage > gitImageShowPercent) {
@@ -169,4 +169,12 @@ window.addEventListener('scroll', function () {
             gitImages[i].classList.remove("active");
         }
     }
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 700);
 });

@@ -82,6 +82,7 @@
 
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f1906bfc24.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="mainPage.js"></script>
 
@@ -121,12 +122,12 @@
         </div>
         <ul id="navigationList">
             <!-- Inspired by: Online tutorials (https://www.youtube.com/watch?v=c2pbcpZJrTs) -->
-            <li style="--listItem:6"><a href="#aboutme">About</a></li>
-            <li style="--listItem:5"><a href="#education">Education</a></li>
-            <li style="--listItem:4"><a href="#experience">Experience</a></li>
-            <li style="--listItem:3"><a href="#certifications">Certifications</a></li>
-            <li style="--listItem:2"><a href="#projects">Projects</a></li>
-            <li style="--listItem:1"><a href="#connect">Connect</a></li>
+            <li class="navItem" style="--listItem:6"><a href="#aboutme">About</a></li>
+            <li class="navItem" style="--listItem:5"><a href="#education">Education</a></li>
+            <li class="navItem" style="--listItem:4"><a href="#experience">Experience</a></li>
+            <li class="navItem" style="--listItem:3"><a href="#certifications">Certifications</a></li>
+            <li class="navItem" style="--listItem:2"><a href="#projects">Projects</a></li>
+            <li class="navItem" style="--listItem:1"><a href="#connect">Connect</a></li>
         </ul>
     </div>
 
@@ -172,6 +173,12 @@
                             <i class="fa-brands fa-github profileCardIcon"></i>
                         </a>
                     </div>
+                    <div class="col-12">
+                        <a href="https://docs.google.com/document/d/129h-aUQjx1xKgWyIqa-gsKspm8HBbI909gNgdiB6Vpw/edit?usp=sharing" target="_blank" style="--linkColor:#fc4e03">
+                            <h6>Resume</h6>
+                            <i class="fa-solid fa-file-pdf profileCardIcon"></i>
+                        </a>
+                    </div>
                 </div>
                 <br>
             </div>
@@ -195,15 +202,19 @@
         <div style="--bgColor:#dddddd; --thickness:60px" class="cubeTop"></div>
         <h1>Education</h1>
         <br>
+        <br>
         <!--Education Container-->
-        <div id="educationImageContainer">
-            <img src="Images/EducationBGSky.png" style="--delay:0.6s" class="eduImageAnimation" alt="Sky" />
-            <img src="Images/EducationBGTrees.png" style="--delay:2s" id="eduTrees" class="eduImageAnimation" alt="Trees" />
-            <img src="Images/EducationBackBuilding.png" style="--delay:1.2s" class="eduImageAnimation" alt="BGBuiding" />
-            <img src="Images/EducationFrontBuilding.png" style="--delay:0s" class="eduImageAnimation" alt="FGBuilding" />
-            <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank">
-                <img id="eduLogoMobile" class="d-lg-none" src="Images/MiamiUniversityLogo.png" alt="Miami University Logo" />
-            </a>
+        <div class="container py-4 px-5" style="background-color: #D3D3D3; transform: skewX(0.0);">
+            <div style="--bgColor:#dddddd; --thickness:18px" class="cubeLeft"></div>
+            <div style="--bgColor:#dddddd; --thickness:18px" class="cubeTop"></div>
+            <div id="educationImageContainer">
+                <img src="Images/EducationBGTrees.png" style="--delay:2.1s" id="eduTrees" class="eduImageAnimation" alt="Trees" />
+                <img src="Images/EducationBackBuilding.png" style="--delay:1.4s" class="eduImageAnimation" alt="BGBuiding" />
+                <img src="Images/EducationFrontBuilding.png" style="--delay:0.7s" class="eduImageAnimation" alt="FGBuilding" />
+                <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank">
+                    <img id="eduLogoMobile" class="d-lg-none" src="Images/MiamiUniversityLogo.png" alt="Miami University Logo" />
+                </a>
+            </div>
         </div>
         <br>
         <div class="row">
@@ -227,7 +238,7 @@
                 <h3>Bachelor of Science in Computer Science</h3>
                 <h5 style="color: gray;">August 2019 – December 2022 (expected)</h5>
                 <p style=" padding-left: 25px">
-                    Miami University is a public research university in Oxford, Ohio. The university was founded in 1809, making it the second-oldest university in Ohio and the 10th oldest public university in the United States. I'm currently studying at <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank" style="--linkColor:#FD5E53"> the College of Engineering and Computing</a> on the university’s main campus. <a href="https://github.com/ethangutknecht#-education" target="_blank" style="--linkColor:#FD5E53; color: gray; font-size: 16px">(View courses i've taken)</a>
+                    Miami University is a public research university in Oxford, Ohio. The university was founded in 1809, making it the second-oldest university in Ohio and the 10th oldest public university in the United States. I'm currently studying at <a href="https://www.miamioh.edu/cec/academics/departments/cse/index.html" target="_blank" style="--linkColor:#FD5E53"> the College of Engineering and Computing</a> on the university’s main campus. <a href="https://github.com/ethangutknecht#-education" target="_blank" style="color: gray; --linkColor:#FD5E53; font-size: 16px">(View courses i've taken)</a>
                 </p>
             </div>
         </div>
@@ -347,7 +358,7 @@
                 <h6 style="color: gray;">Certificate ID: 6E823X8DHNVQ1NWE</h6>
                 <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" style="padding-left: 25px;--linkColor:#FD5E53">More Info</a><span> · </span>
                 <a href="https://www.credly.com/badges/23f01fb3-96a5-4f47-9c46-4b926e07377d/public_url" target="_blank" style="--linkColor:#FD5E53">View Badge</a><span> · </span>
-                <a href="https://aws.amazon.com/verification" target="_blank" style="--linkColor:#FD5E53" >Verify</a><br><br>
+                <a href="https://aws.amazon.com/verification" target="_blank" style="--linkColor:#FD5E53">Verify</a><br><br>
             </div>
             <div class="col-lg-3"><br>
                 <!--SAA Logo-->
@@ -627,8 +638,6 @@
         <p id="introMessage">Hello</p>
     </div>
     <br>
-</body></html>
+</body>
 
-
-
-
+</html>
