@@ -569,6 +569,10 @@ a:hover {
 
 /*Experience*/
 
+.typeOfExperience {
+    font-weight: 300;
+}
+
 /* Get In Touch */
 
 .copySuccess {
