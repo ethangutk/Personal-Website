@@ -1,5 +1,5 @@
 <h6 >
-	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To ethangtkt's Profile</a>
 </h6>
 <h1 align="center">🤵 Personal Website</h1><br>
 <table align="center">
@@ -26,7 +26,7 @@
   	</tr>
 	<tr>
 		<td align="center">
-			<a href="https://vscode.dev/github.com/ethangutknecht/Personal-Website">🔍 Explore the source code directly in<br>the browser using VSCode!</a>
+			<a href="https://vscode.dev/github.com/ethangtkt/Personal-Website">🔍 Explore the source code directly in<br>the browser using VSCode!</a>
 		</td>
 	</tr>
 
@@ -43,8 +43,8 @@ Making my website has always been on my mind since I enrolled in computer scienc
 The motivation for this project was the new knowledge about the easiness of hosting static websites using AWS services. I hosted my website using a public AWS S3 bucket under my account. Since I bought my domain a while back using google, I decided to use Google Domains rather than Route 53 for hosting. The S3 bucket and Google Domains created an HTTP connection, which benefited the testing since I could test on mobile devices and desktops. The domain costs me about $12.00 annually, and storing it on an S3 bucket only costs me ~$0.50 monthly. Overall, it’s a very streamlined and cheap way to allow your static website to go live quickly.
 
 <p align="center">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/S3Bucket.png?raw=true">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/GoogleDomains.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/S3Bucket.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/GoogleDomains.png?raw=true">
 </p>
 
 
@@ -53,7 +53,7 @@ The motivation for this project was the new knowledge about the easiness of host
 As explained above, I had an HTTP connection until I 100% finished the website. Then, when it came time to make it an HTTPS connection, I used AWS CloudFront as the middleman between the S3 bucket and the user. Cloud front caches your website in edge locations/data centers around the country, allowing the user a faster connection to your content. In addition, it gives the cache data a TTL of one day, thus only making it suitable for data that doesn’t change very rapidly - hence why I waited to do this step until the end of development. Also, having an HTTPS connection helps Google’s SE algorithm find my website. So, in short, the user connects to Google Domains DNS service that hosts my website, which securely connects them to a CloudFront edge location, and then CloudFront connects to the S3 bucket to gain the content (if it doesn’t already have it cached). You’re probably wondering about the cost. Free.
 
 <p align="center">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/CloudFront.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/CloudFront.png?raw=true">
 </p>
 
 
@@ -92,7 +92,7 @@ Animations are a relatively newer topic for me. I learned animations six months 
 ### 🎨 Theme
 I created the overall structure blindly. Once the website started to take shape, I started experimenting with different colors and ways to display content. I decided on a color scheme representing a sunset since it’s easy on the eye, bright and vibrant, and not stand loutish. I decided to create a 3D look after watching CSS tutorials on YouTube. With that combination, the result is a bright, 3D, dynamic environment. [View the entire color scheme inspiration here](https://www.schemecolor.com/sunset-tones.php).
 <p align="center">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/ColorScheme.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/ColorScheme.png?raw=true">
 </p>
 
 <br><br>
@@ -100,7 +100,7 @@ I created the overall structure blindly. Once the website started to take shape,
 This is the most critical part of this website. Metadata allows for polished sharing. I discovered how to make a website's metadata more efficient for sharing. I added fields for Twitter, iMessage sharing, generic link sharing, apple home screen icons, fav icons, and descriptions. It might have overdone it a bit, but this allowed me to show off my website while not being on it. In addition, it gives more opportunities to catch people's attention. You can find all metadata in the <head> section of the HTML document.
 
 <p align="center">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/MetaDataPreview.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/MetaDataPreview.png?raw=true">
 </p>
 
 <br><br><br><br>
@@ -109,14 +109,14 @@ This is the most critical part of this website. Metadata allows for polished sha
 
 <br>
 <h3 align="center">
-View the full website here: <a href="https://www.ethangutknecht.com/"> www.ethangutknecht.com </a>
+View the full website here: <a href="https://www.ethangtkt.com/"> www.ethangtkt.com </a>
 </h3>
 <br>
 
 <p align="center">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/PreviewOne.png?raw=true">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/PreviewTwo.png?raw=true">
-  <img src="https://github.com/ethangutknecht/Personal-Website/blob/main/Images/PreviewThree.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/PreviewOne.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/PreviewTwo.png?raw=true">
+  <img src="https://github.com/ethangtkt/Personal-Website/blob/main/Images/PreviewThree.png?raw=true">
 </p>
 <br><br><br>
 
@@ -128,13 +128,13 @@ View the full website here: <a href="https://www.ethangutknecht.com/"> www.ethan
 - - - -
 
 <h6 align="center">
-	<a href="https://github.com/ethangutknecht">↩ Back To Ethan Gutknecht's Profile</a>
+	<a href="https://github.com/ethangtkt">↩ Back To ethangtkt's Profile</a>
 </h6>
 
 - - - -
 
 <h6 align="center">
-  Copyright © Ethan Gutknecht 2022
+  Copyright © ethangtkt 2022
 </h6>
 
 
