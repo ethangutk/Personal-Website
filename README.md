@@ -122,7 +122,7 @@ View the full website here: <a href="https://www.ethangtkt.com/"> www.ethangtkt.
 
 - - - -
 <h6 align="center">
-	<a align="center" href="#-back-to-ethan-gutknechts-profile">⬆ Back To The Top </a>
+	<a align="center" href="#-back-to-ethangtkts-profile">⬆ Back To The Top </a>
 </h6>
 
 - - - -
